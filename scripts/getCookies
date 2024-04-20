@@ -1,64 +1,63 @@
 #!name=Cookies
 #!desc=获取Cookies
-#柠季小程序获取Cookie
+# 柠季
 [Script]
 柠季获取Cookie = type=http-response,pattern=^https?:\/\/pos\.meituan\.com\/api\/v1\/crm\/frontend\/campaign\/display,requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/ningji/ningji.js,script-update-interval=0
 [MITM]
 hostname = %APPEND% pos.meituan.com
-# 雀巢会员俱乐部小程序获取Cookie
+# 雀巢会员俱乐部
 [Script]
 雀巢获取Cookie = type=http-request, pattern=^https:\/\/crm.nestlechinese.com\/openapi\/pointsservice\/api\/Points\/getuserbalance, script-path=https://gist.githubusercontent.com/Sliverkiss/f533ada8d658a0cbbe4b2e791c3b0ac8/raw/be3d9b74fe1cde69e6d39b599e5526110c996958/nestle.js, timeout=60
 [MITM]
 hostname = %APPEND% crm.nestlechinese.com
-#万达智慧商业小程序获取Cookie
+# 万达智慧商业
 [Script]
 万达智慧商业获取Cookie = type=http-response,pattern=^https?:\/\/www\.wandawic\.com\/api\/foreground\/loginregister\/queryUser,requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js,script-update-interval=0
 [MITM]
 hostname = %APPEND% www.wandawic.com
-#龙湖天街小程序获取Cookie
+# 龙湖天街
 [Script]
 龙湖天街小程序获取Cookie = type=http-request, pattern=^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock, script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, timeout=60
 [MITM]
 hostname = %APPEND% gw2c-hw-open.longfor.com
-#益禾堂小程序获取Cookie
+# 益禾堂
 [Script]
 益禾堂获取Cookie = type=http-request, pattern=^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info, script-path=https://gist.githubusercontent.com/Sliverkiss/df5dbbf01bc3acc3bccaf7880acd242b/raw/yht.js, timeout=10
 [MITM]
 hostname = %APPEND% qmwebapi.qmai.cn, webapi.qmai.cn
-# 有赞小程序获取Cookie
+# 有赞
 [Script]
 有赞获取Cookie = type=http-response, pattern=https://h5.youzan.com/wscump/checkin/get_activity_by_yzuid_v2.json.+, script-path=https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, timeout=60
 [MITM]
 hostname = %APPEND% h5.youzan.com
-#杰士邦安心福利社小程序获取Cookie
+# 杰士邦安心福利社
 [Script]
 杰士邦安心福利社获取Cookie = type=http-response, pattern=^https:\/\/vip\.ixiliu\.cn\/mp\/user\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, requires-body=true, timeout=60
 [MITM]
 hostname = %APPEND% vip.ixiliu.cn
-#沪上阿姨小程序获取Cookie
+# 沪上阿姨
 [Script]
 沪上阿姨获取Cookie= type=http-request, pattern=^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info, script-path=https://gist.githubusercontent.com/Sliverkiss/e427dc3164d0c008f8d282f180d7fc00/raw/hsay.js, timeout=60
 [MITM]
 hostname = %APPEND% qmwebapi.qmai.cn, webapi.qmai.cn
-#B站获取Cookie
+# B站获取
 [Script]
-# B站获取Cookie(APP)
-BiliBiliDailyBonus = type=http-request, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\?, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, binary-body-mode=true, timeout=60
-# B站获取Cookie(网页)
-BiliBiliDailyBonus = type=http-request, pattern=^https?:\/\/m.bilibili.com/$, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, binary-body-mode=true, timeout=60
+# B站获取Cookie
+B站获取Cookie(APP) = type=http-request, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\?, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, binary-body-mode=true, timeout=60
+B站获取Cookie(网页) = type=http-request, pattern=^https?:\/\/m.bilibili.com/$, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, binary-body-mode=true, timeout=60
 [MITM]
 hostname = %APPEND% app.bilibili.com, m.bilibili.com
-# 达乐美披萨小程序获取Cookie
+# 达乐美披萨
 [Script]
 达美乐获取Cookie = type=http-request, pattern=^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone, script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, requires-body=true, max-size=-1, timeout=60
 [MITM]
 hostname = %APPEND% game.dominos.com.cn
-# 亚朵酒店获取Cookie
+# 亚朵酒店
 [Script]
 亚朵获取Cookie = type=http-request, pattern=^https:\/\/miniapp\.yaduo\.com\/atourlife\/signIn\/signIn.+, script-path=https://gist.githubusercontent.com/Sliverkiss/2e2093bfd5f524d58c8e90fed9beacfd/raw/e399523e428f3c173ec4b95c892725006c3128ff/adjd.js, timeout=60
 [MITM]
 hostname = %APPEND% miniapp.yaduo.com
-# 杜蕾斯会员中心小程序获取Cookie
+# 杜蕾斯会员中心
 [Script]
 杜蕾斯会员中心获取Cookie = type=http-request, pattern=^https:\/\/vip\.ixiliu\.cn\/mp\/user\/info$, script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, timeout=60
 [MITM]
