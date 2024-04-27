@@ -1,4 +1,4 @@
-[MITM]
+[mitm]
 hostname = go.heytea.com
 
 [rewrite_local]
