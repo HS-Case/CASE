@@ -1,5 +1,5 @@
-[mitm]
-hostname = go.heytea.com
-
 [rewrite_local]
-^https:\/\/go\.heytea\.com\/api\/service-member\/vip\/member-exp\/account-info url script-response-body https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HeyTea/HeyTea.js
+^https:\/\/vip.heytea.com\/api\/service-member\/vip\/task\/member url script-response-body https://gist.githubusercontent.com/Sliverkiss/cc0928ca661cf3d89f55902e11b28432/raw/heytea.js
+
+[MITM]
+hostname = vip.heytea.com
