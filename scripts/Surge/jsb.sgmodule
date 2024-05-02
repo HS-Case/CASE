@@ -1,1 +1,2 @@
+[Script]
 杰士邦安心福利社 = type=cron,cronexp="30 7 * * *",script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js,script-update-interval=0
