@@ -1,2 +1,0 @@
-[Script]
-Sakura Checkbox = type=cron, cronexp="30 7 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, timeout=300
