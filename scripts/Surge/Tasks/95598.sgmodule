@@ -1,3 +1,5 @@
+#!name=网上国电
+#!desc=查询用电情况
 [Panel]
 策略面板 = script-name=网上国网,update-interval=7200
 [Script]
