@@ -1,0 +1,4 @@
+#!name=蜜雪冰城
+#!desc=每日任务
+[Script]
+网上国网 = type=cron,cronexp=30 7 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,timeout=60
