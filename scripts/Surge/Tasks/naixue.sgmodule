@@ -1,4 +1,0 @@
-#!name=奈雪的茶
-#!desc=每日签到
-[Script]
-奈雪的茶 = type=cron, cronexp="30 7 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js,timeout=60

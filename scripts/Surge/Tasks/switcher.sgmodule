@@ -1,4 +1,0 @@
-#!name=会话切换
-#!desc=Testflight会话切换
-[Script]
-会话切换 = type=cron,cronexp=0 25 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js,timeout=60

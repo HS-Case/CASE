@@ -1,4 +1,0 @@
-#!name=喜茶
-#!desc=每日签到
-[Script]
-喜茶 = type=cron, cronexp="30 7 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/cc0928ca661cf3d89f55902e11b28432/raw/heytea.js,timeout=60

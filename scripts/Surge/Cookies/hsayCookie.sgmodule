@@ -1,7 +1,0 @@
-#!name=沪上阿姨
-#!desc=获取Cookie
-
-[Script]
-沪上阿姨获取token = type=http-request, pattern=^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info, script-path=https://gist.githubusercontent.com/Sliverkiss/e427dc3164d0c008f8d282f180d7fc00/raw/280945016940399a593955e40ce0d4591a5292c5/hsay.js, timeout=10
-[MITM]
-hostname = %APPEND% webapi.qmai.cn
