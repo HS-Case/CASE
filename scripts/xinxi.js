@@ -1,6 +1,0 @@
-[Script]
-辛喜_获取token = type=http-response,pattern=^https:\/\/api\.xinc818\.com\/mini\/user,script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/BackUp/XinXi/XinXi.js,requires-body=1,max-size=0
-辛喜 = type=cron,cronexp="55 0,20 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/BackUp/XinXi/XinXi.js,script-update-interval=0,timeout=3600,wake-system=1,engine=jsc
-
-[MITM]
-hostname = %APPEND% api.xinc818.com
