@@ -16,7 +16,7 @@ function install() {
     mkdir /data/ydysj
     wget -q -O /data/ydysj/httpd "https://mirror.ghproxy.com/https://raw.githubusercontent.com/xmsssssss/YDYSJ/main/tools/httpd"
     chmod 777 /data/ydysj/httpd
-    /data/ydysj/httpd -p 10003
+    /data/ydysj/httpd -p 10002
     httpdstatus=$(ps -ef | grep httpd | grep -v grep | awk '{print $2}')
     if [[ $httpdstatus ]]; then
         echo -e "${GREEN} httpd 启动成功${NC}"
