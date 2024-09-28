@@ -1,7 +1,0 @@
-#!name=瑞幸咖啡
-#!desc=Lucky一下。
-[URL Rewrite]
-# 瑞幸咖啡 开屏广告
-^https?:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
-[MITM]
-hostname = %APPEND% capi.lkcoffee.com
