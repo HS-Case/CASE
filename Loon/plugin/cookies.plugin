@@ -1,0 +1,60 @@
+#!name=Cookies
+#!desc=Cookie获取
+#!icon=https://raw.githubusercontent.com/HS-Case/CASE/refs/heads/main/icon/Case.png
+#!keyword=Cookies
+#!system=ios
+
+[Argument]
+arg1 = switch,true,tag=B站Cookie(APP)
+arg2 = switch,true,tag=阿里云Cookie
+arg3 = switch,true,tag=阿里云盘Cookie
+arg4 = switch,true,tag=达美乐小游戏Cookie
+arg5 = switch,true,tag=海天美味馆Cookie
+arg6 = switch,true,tag=杰士邦安心福利社Cookie
+arg7 = switch,true,tag=龙湖天街Cookie
+arg8 = switch,true,tag=蜜雪冰城Cookie
+arg9 = switch,true,tag=奶茶多合一Cookie
+arg10 = switch,true,tag=奈雪点单Cookie
+arg11 = switch,true,tag=柠季Cookie
+arg12 = switch,true,tag=胖乖生活Cookie
+arg13 = switch,true,tag=顺丰速运Cookie
+arg14 = switch,true,tag=万达智慧商业Cookie
+arg15 = switch,true,tag=喜茶Cookie
+arg16 = switch,true,tag=有赞Cookie
+
+[Script]
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, enable={arg1}, tag=B站Cookie(APP)
+
+http-response ^https?:\/\/developer\.aliyun\.com\/developer\/api\/my\/user\/getUser script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/aliyun_web/aliyun_web.js, requires-body=true, timeout=60, enable={arg2}, tag=阿里云Cookie
+
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, enable={arg3}, tag=阿里云盘Cookie
+
+http-request ^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, requires-body=true, timeout=10, enable={arg4}, tag=达美乐小游戏Cookie
+
+http-response ^https:\/\/cmallapi\.haday\.cn\/buyer-api\/wechat\/mini\/phoneNew\/login script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.js, requires-body=true, enable={arg5}, tag=海天美味馆Cookie
+
+http-response ^https:\/\/xh-vip-api\.a-touchin\.com\/mp\/user\/info script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, requires-body=true, timeout=60, enable={arg6}, tag=杰士邦安心福利社Cookie
+
+http-request ^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, timeout=60, enable={arg7}, tag=龙湖天街Cookie
+
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60, enable={arg8}, tag=蜜雪冰城Cookie
+
+http-request ^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, enable={arg9}, tag=奶茶多合一Cookie
+http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, enable={arg9}, tag=奶茶多合一Cookie
+
+http-request ^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=60, enable={arg10}, tag=奈雪点单Cookie
+
+http-response ^https?:\/\/pos\.meituan\.com\/api\/v1\/crm\/frontend\/campaign\/display script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/ningji/ningji.js, requires-body=true, timeout=30, enable={arg11}, tag=柠季Cookie
+
+http-request ^https:\/\/userapi\.qiekj\.com\/wechat\/unionId\/login script-path=https://gist.githubusercontent.com/Sliverkiss/845cf469e4762afdc83c3949be006609/raw/pgsh.js, requires-body=true, timeout=60, enable={arg12}, tag=胖乖生活Cookie
+
+http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=sfsy.js, requires-body=true, timeout=60, enable={arg13}, tag=顺丰速运Cookie
+
+http-response ^https?:\/\/www\.wandawic\.com\/api\/foreground\/loginregister\/queryUser script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/wdzhsy/wdzhsy.js, requires-body=true, timeout=30, enable={arg14}, tag=万达智慧商业Cookie
+
+http-response ^https:\/\/vip.heytea.com\/api\/service-member\/vip\/task\/member script-path=https://gist.githubusercontent.com/Sliverkiss/cc0928ca661cf3d89f55902e11b28432/raw/heytea.js, requires-body=true, timeout=60, enable={arg15}, tag=喜茶Cookie
+
+http-response https://h5.youzan.com/wscump/checkin/get_activity_by_yzuid_v2.json.+ script-path=https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, timeout=300, enable={arg16}, tag=有赞Cookie
+
+[MITM]
+hostname = app.bilibili.com, developer.aliyun.com, auth.alipan.com, auth.aliyundrive.com, game.dominos.com.cn, cmallapi.haday.cn, xh-vip-api.a-touchin.com, gw2c-hw-open.longfor.com, mxsa.mxbc.net, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, tm-web.pin-dao.cn, pos.meituan.com, userapi.qiekj.com, mcs-mimp-web.sf-express.com, www.wandawic.com, vip.heytea.com, h5.youzan.com
