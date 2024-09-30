@@ -1,6 +1,6 @@
 #!name=Tasks
 #!desc=每日任务&签到
-#!icon=https://raw.githubusercontent.com/HS-Case/CASE/refs/heads/main/icon/Case.png
+#!icon=https://raw.githubusercontent.com/HS-Case/CASE/main/icon/Case.png
 
 [Argument]
 arg1 = input, "15 7 * * *", tag= B站每日等级任务
