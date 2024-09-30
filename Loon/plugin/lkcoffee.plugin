@@ -1,0 +1,10 @@
+#!name=瑞幸咖啡
+#!desc=Lucky一下。
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1024.png
+
+[Rewrite]
+# 瑞幸咖啡 开屏广告
+^https?:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
+
+[MITM]
+hostname = capi.lkcoffee.com
