@@ -21,7 +21,7 @@ arg13 = switch,true,tag=顺丰速运Cookie
 arg14 = switch,true,tag=万达智慧商业Cookie
 arg15 = switch,true,tag=喜茶Cookie
 arg16 = switch,true,tag=有赞Cookie
-
+arg17 = switch,true,tag=巴奴毛肚火锅Cookie
 [Script]
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, enable={arg1}, tag=B站Cookie(APP)
 
@@ -56,5 +56,6 @@ http-response ^https:\/\/vip.heytea.com\/api\/service-member\/vip\/task\/member 
 
 http-response https://h5.youzan.com/wscump/checkin/get_activity_by_yzuid_v2.json.+ script-path=https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, timeout=300, enable={arg16}, tag=有赞Cookie
 
-[MITM]
-hostname = app.bilibili.com, developer.aliyun.com, auth.alipan.com, auth.aliyundrive.com, game.dominos.com.cn, cmallapi.haday.cn, xh-vip-api.a-touchin.com, gw2c-hw-open.longfor.com, mxsa.mxbc.net, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, tm-web.pin-dao.cn, pos.meituan.com, userapi.qiekj.com, mcs-mimp-web.sf-express.com, www.wandawic.com, vip.heytea.com, h5.youzan.com
+http-request ^https:\/\/cloud\.banu\.cn\/api\/member\/statistic\?member_id=([a-zA-Z0-9]+) script-path=https://github.com/HS-Case/CASE/raw/main/Loon/js/Bnmdhg_Cookie.js, requires-body=true, timeout=60, enable={arg17}, tag=巴奴毛肚火锅Cookie
+
+hostname = app.bilibili.com, developer.aliyun.com, auth.alipan.com, auth.aliyundrive.com, game.dominos.com.cn, cmallapi.haday.cn, xh-vip-api.a-touchin.com, gw2c-hw-open.longfor.com, mxsa.mxbc.net, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, tm-web.pin-dao.cn, pos.meituan.com, userapi.qiekj.com, mcs-mimp-web.sf-express.com, www.wandawic.com, vip.heytea.com, h5.youzan.com，cloud.banu.cn 
