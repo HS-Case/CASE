@@ -1,5 +1,6 @@
 #!name=瞬连VPN
 #!desc=白嫖节点
 #!icon=https://github.com/HS-Case/CASE/raw/main/icon/SLVPN.png
-[script]
-瞬连vpn = type=http-request,pattern=30 0 * * *,requires-body=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/refs/heads/master/surge/Script/SLVPN.js
+
+[Script]
+http-request 30 0 * * * script-path=https://raw.githubusercontent.com/Alex0510/Eric/refs/heads/master/surge/Script/SLVPN.js, tag=瞬连vpn
