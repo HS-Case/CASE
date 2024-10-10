@@ -1,6 +1,8 @@
 #!name=瞬连VPN
 #!desc=白嫖节点
 #!icon=https://github.com/HS-Case/CASE/raw/main/icon/SLVPN.png
-
+[Argument]
+arg1 = input, "30 0 * * *", tag= 瞬连VPN
+arg2 = switch, true, tag= 瞬连VPN
 [Script]
-cron "30 0 * * *" script-path=https://raw.githubusercontent.com/Alex0510/Eric/refs/heads/master/surge/Script/SLVPN.js, tag=瞬连vpn
+cron {arg1} script-path=https://raw.githubusercontent.com/Alex0510/Eric/refs/heads/master/surge/Script/SLVPN.js, enable={arg2},tag=瞬连VPN
