@@ -6,7 +6,7 @@ def generate_json():
     json_data = {
         "name": "Case图标订阅",
         "description": "自用图标",
-        "icons": []
+        "icons": "https://github.com/HS-Case/CASE/raw/main/icon/Case.png"
     }
 
     for filename in os.listdir(image_folder):
