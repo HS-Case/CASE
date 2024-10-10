@@ -3,4 +3,4 @@
 #!icon=https://github.com/HS-Case/CASE/raw/main/icon/SLVPN.png
 
 [Script]
-cron 30 0 * * * script-path=https://raw.githubusercontent.com/Alex0510/Eric/refs/heads/master/surge/Script/SLVPN.js, tag=瞬连vpn
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/Alex0510/Eric/refs/heads/master/surge/Script/SLVPN.js, tag=瞬连vpn
