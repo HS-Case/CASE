@@ -1,6 +1,6 @@
 #!name=瞬连VPN
 #!desc=白嫖节点
-#!icon=https://github.com/HS-Case/CASE/raw/main/icon/SLVPN.png
+#!icon=https://github.com/HS-Case/CASE/raw/main/icon/瞬连VPN.png
 [Script]
 http-request https:\/\/sl\.eric\.vpn script-path=https://gist.githubusercontent.com/Sliverkiss/d70debac23704d6ec6feff1e99368f1b/raw/slvpn.js, requires-body=true, timeout=60, tag=slvpn
 [MITM]
