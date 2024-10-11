@@ -3,10 +3,6 @@
   "description": "自用图标",
   "icons": [
     {
-      "name": "hgds.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/hgds.png"
-    },
-    {
       "name": "Case.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/Case.png"
     },
@@ -23,14 +19,6 @@
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xishiyan.png"
     },
     {
-      "name": "miketea.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/miketea.png"
-    },
-    {
-      "name": "ht.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/ht.png"
-    },
-    {
       "name": "SLVPN.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/SLVPN.png"
     },
@@ -41,10 +29,6 @@
     {
       "name": "lkcoffee.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/lkcoffee.png"
-    },
-    {
-      "name": "kuka.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/kuka.png"
     },
     {
       "name": "scriptable.png",
@@ -77,14 +61,6 @@
     {
       "name": "nj.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/nj.png"
-    },
-    {
-      "name": "lhtj.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/lhtj.png"
-    },
-    {
-      "name": "blued.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/blued.png"
     },
     {
       "name": "sdl.png",
