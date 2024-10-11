@@ -1,6 +1,6 @@
 #!name=小蓝视频
 #!desc=解锁视频
-#!icon=https://raw.githubusercontent.com/HS-Case/Case/main/icon/bluemv.png
+#!icon=https://raw.githubusercontent.com/HS-Case/Case/main/icon/小蓝视频.png
 
 [Script]
 http-response ^https?:\/\/.+\.(gvlan.club|npxprq.com|hmicfbqonk.com|zx4vn5mq.com)\/pwa.php\/api\/((mv|original)\/(mv_)?detail|home\/getConfig|community\/post_detail_by_id|users\/getBaseInfo) script-path=https://gist.githubusercontent.com/Cyb3rF1r3/efcee66b5d57a41af432f85e59256f0a/raw/bluemv.vip.js, requires-body=true, timeout=60, tag=bluemv.vip
