@@ -35,10 +35,6 @@
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/scriptable.png"
     },
     {
-      "name": "ppmt.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/ppmt.png"
-    },
-    {
       "name": "wutui.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/wutui.png"
     },
@@ -59,10 +55,6 @@
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xjb.png"
     },
     {
-      "name": "nj.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/nj.png"
-    },
-    {
       "name": "sdl.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/sdl.png"
     },
@@ -73,14 +65,6 @@
     {
       "name": "wxzfyyh.png",
       "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/wxzfyyh.png"
-    },
-    {
-      "name": "naixue.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/naixue.png"
-    },
-    {
-      "name": "mpcbh.png",
-      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/mpcbh.png"
     }
   ]
 }
