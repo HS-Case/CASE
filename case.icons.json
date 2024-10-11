@@ -1,0 +1,138 @@
+{
+  "name": "Case图标订阅",
+  "description": "自用图标",
+  "icons": [
+    {
+      "name": "hgds.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/hgds.png"
+    },
+    {
+      "name": "Case.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/Case.png"
+    },
+    {
+      "name": "youzan.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/youzan.png"
+    },
+    {
+      "name": "韩小圈.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/韩小圈.png"
+    },
+    {
+      "name": "xicha.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xicha.png"
+    },
+    {
+      "name": "Naver.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/Naver.png"
+    },
+    {
+      "name": "TIDAL.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/TIDAL.png"
+    },
+    {
+      "name": "xishiyan.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xishiyan.png"
+    },
+    {
+      "name": "miketea.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/miketea.png"
+    },
+    {
+      "name": "ht.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/ht.png"
+    },
+    {
+      "name": "aliyun.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/aliyun.png"
+    },
+    {
+      "name": "SLVPN.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/SLVPN.png"
+    },
+    {
+      "name": "zippo.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/zippo.png"
+    },
+    {
+      "name": "bluemv.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/bluemv.png"
+    },
+    {
+      "name": "lkcoffee.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/lkcoffee.png"
+    },
+    {
+      "name": "kuka.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/kuka.png"
+    },
+    {
+      "name": "scriptable.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/scriptable.png"
+    },
+    {
+      "name": "ppmt.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/ppmt.png"
+    },
+    {
+      "name": "wutui.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/wutui.png"
+    },
+    {
+      "name": "Bilibili.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/Bilibili.png"
+    },
+    {
+      "name": "xcbwc.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xcbwc.png"
+    },
+    {
+      "name": "xstl.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xstl.png"
+    },
+    {
+      "name": "qdxw.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/qdxw.png"
+    },
+    {
+      "name": "xjb.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/xjb.png"
+    },
+    {
+      "name": "nj.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/nj.png"
+    },
+    {
+      "name": "lhtj.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/lhtj.png"
+    },
+    {
+      "name": "blued.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/blued.png"
+    },
+    {
+      "name": "sdl.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/sdl.png"
+    },
+    {
+      "name": "riqing.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/riqing.png"
+    },
+    {
+      "name": "TestFlight.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/TestFlight.png"
+    },
+    {
+      "name": "wxzfyyh.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/wxzfyyh.png"
+    },
+    {
+      "name": "naixue.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/naixue.png"
+    },
+    {
+      "name": "mpcbh.png",
+      "url": "https://raw.githubusercontent.com/HS-Case/CASE/main/icon/mpcbh.png"
+    }
+  ]
+}
