@@ -2,8 +2,6 @@
 #!desc = Talkatone分流。
 #!icon = https://raw.githubusercontent.com/HS-Case/Case/main/icon/Talkatone.png
 [Rule]
-# talkatone,DIRECT
-,DIRECT
 DOMAIN-SUFFIX,mobilefuse.com,DIRECT
 DOMAIN-SUFFIX,inmobi.com,DIRECT
 DOMAIN-SUFFIX,crashlytics.com,DIRECT
