@@ -21,11 +21,13 @@ jobs:
     - name: Modify and Append Header
       run: |
         mkdir -p Loon/plugin
+        # 写入文件头部信息
         echo '#!name = Talkatone' > Loon/plugin/Talkatone.plugin
         echo '#!desc = Talkatone分流。' >> Loon/plugin/Talkatone.plugin
         echo '#!icon = https://raw.githubusercontent.com/HS-Case/Case/main/icon/Talkatone.png' >> Loon/plugin/Talkatone.plugin
         echo '[Rule]' >> Loon/plugin/Talkatone.plugin
-        sed 's/$/,DIRECT/' talkatone.list >> Loon/plugin/Talkatone.plugin
+        # 忽略第一行注释并处理规则内容
+        grep -v '^#' talkatone.list | sed '/^$/d' | sed 's/$/,DIRECT/' >> Loon/plugin/Talkatone.plugin
         echo 'DOMAIN-KEYWORD,tktn.be,美国节点' >> Loon/plugin/Talkatone.plugin
 
     - name: Commit and Push Changes
