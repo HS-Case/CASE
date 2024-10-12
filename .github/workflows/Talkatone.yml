@@ -1,0 +1,39 @@
+permissions:
+  contents: write
+name: Talkatone Update Workflow
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天定时运行
+  workflow_dispatch: # 手动触发
+
+jobs:
+  update_talkatone_file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Fetch the latest talkatone.list
+      run: curl -o talkatone.list https://raw.githubusercontent.com/SIJULY/Rules/main/Surge/talkatone.list
+
+    - name: Modify and Append Header
+      run: |
+        mkdir -p Loon/plugin
+        echo '#!name = Talkatone' > Loon/plugin/Talkatone.plugin
+        echo '#!desc = Talkatone分流。' >> Loon/plugin/Talkatone.plugin
+        echo '#!icon = https://raw.githubusercontent.com/HS-Case/Case/main/icon/Talkatone.png' >> Loon/plugin/Talkatone.plugin
+        echo '[Rule]' >> Loon/plugin/Talkatone.plugin
+        sed 's/$/,DIRECT/' talkatone.list >> Loon/plugin/Talkatone.plugin
+        echo 'DOMAIN-KEYWORD,tktn.be,美国节点' >> Loon/plugin/Talkatone.plugin
+
+    - name: Commit and Push Changes
+      run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor }}@users.noreply.github.com"
+        git add Loon/plugin/Talkatone.plugin
+        git commit -m "Update Talkatone.plugin with latest rules and ,DIRECT"
+        git push origin HEAD:main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
