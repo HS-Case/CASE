@@ -5,22 +5,22 @@
 #!system=ios
 
 [Argument]
-arg1 = switch,true,tag=B站Cookie(APP)
-arg2 = switch,true,tag=阿里云Cookie
-arg3 = switch,true,tag=阿里云盘Cookie
-arg4 = switch,true,tag=达美乐小游戏Cookie
-arg5 = switch,true,tag=海天美味馆Cookie
-arg6 = switch,true,tag=杰士邦安心福利社Cookie
-arg7 = switch,true,tag=龙湖天街Cookie
-arg8 = switch,true,tag=蜜雪冰城Cookie
-arg9 = switch,true,tag=奶茶多合一Cookie
-arg10 = switch,true,tag=奈雪点单Cookie
-arg11 = switch,true,tag=柠季Cookie
-arg12 = switch,true,tag=胖乖生活Cookie
-arg13 = switch,true,tag=顺丰速运Cookie
-arg14 = switch,true,tag=万达智慧商业Cookie
-arg15 = switch,true,tag=喜茶Cookie
-arg16 = switch,true,tag=有赞Cookie
+arg1 = switch,true,false,tag=B站Cookie(APP)
+arg2 = switch,true,false,tag=阿里云Cookie
+arg3 = switch,true,false,tag=阿里云盘Cookie
+arg4 = switch,true,false,tag=达美乐小游戏Cookie
+arg5 = switch,true,false,tag=海天美味馆Cookie
+arg6 = switch,true,false,tag=杰士邦安心福利社Cookie
+arg7 = switch,true,false,tag=龙湖天街Cookie
+arg8 = switch,true,false,tag=蜜雪冰城Cookie
+arg9 = switch,true,false,tag=奶茶多合一Cookie
+arg10 = switch,true,false,tag=奈雪点单Cookie
+arg11 = switch,true,false,tag=柠季Cookie
+arg12 = switch,true,false,tag=胖乖生活Cookie
+arg13 = switch,true,false,tag=顺丰速运Cookie
+arg14 = switch,true,false,tag=万达智慧商业Cookie
+arg15 = switch,true,false,tag=喜茶Cookie
+arg16 = switch,true,false,tag=有赞Cookie
 [Script]
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, enable={arg1}, tag=B站Cookie(APP)
 
