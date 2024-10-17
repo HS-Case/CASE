@@ -57,6 +57,8 @@ arg34 = switch, true, false, tag= 有赞每日签到
 arg35 = input, "0 9 * * *", tag= 吾爱破解每日签到
 arg36 = switch, true, false, tag= 吾爱破解每日签到
 
+arg37 = input, "55 9 * * *", tag= 雨晨ios每日签到
+arg38 = switch, true, false, tag= 雨晨ios每日签到
 [Script]
 cron {arg1} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, timeout=120, enable={arg2}, tag=B站每日等级任务
 
@@ -93,3 +95,5 @@ cron {arg31} script-path=https://gist.githubusercontent.com/Sliverkiss/cc0928ca6
 cron {arg33} script-path=https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, timeout=300, enable={arg34}, tag=有赞小程序每日签到
 
 cron {arg35} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js, timeout=10, enable={arg36},tag=吾爱破解签到
+
+cron {arg37} script-path=https://gist.githubusercontent.com/Sliverkiss/9aab5b214f3145e39639a2581e83bb27/raw/yuchenios.js, timeout=10, enable={arg38},tag=雨晨ios签到
