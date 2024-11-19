@@ -44,4 +44,4 @@
 {{{禁用WPS_Cookie}}} WPS_Cookie = type=http-request, pattern=^https:\/\/(vip|account)(userinfo|\.wps\.cn\/p\/auth\/check)$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/wps.js, timeout=60
 
 [MITM]
-hostname = %APPEND% {{{禁用WPS_Cookie}}}client.app.coc.10086.cn
+hostname = %APPEND% {{{禁用B站Cookie(APP)}}}app.bilibili.com,{{{禁用B站Cookie(网页)}}}m.bilibili.com,{{{禁用阿里云Cookie}}}developer.aliyun.com,{{{禁用阿里云盘Cookie}}}auth.alipan.com,{{{禁用阿里云盘Cookie}}}auth.aliyundrive.com,{{{禁用达美乐小游戏Cookie}}}game.dominos.com.cn,{{{禁用海天美味馆Cookie}}}cmallapi.haday.cn,{{{禁用杰士邦安心福利社Cookie}}}xh-vip-api.a-touchin.com,{{{禁用龙湖天街Cookie}}}gw2c-hw-open.longfor.com,{{{禁用蜜雪冰城Cookie}}}mxsa.mxbc.net,{{{禁用奶茶多合一Cookie}}}webapi.qmai.cn,{{{禁用奶茶多合一Cookie}}}webapi2.qmai.cn,{{{禁用奶茶多合一Cookie}}}qmwebapi.qmai.cn,{{{禁用奈雪点单Cookie}}}tm-web.pin-dao.cn,{{{禁用柠季Cookie}}}pos.meituan.com,{{{禁用胖乖生活Cookie}}}userapi.qiekj.com,{{{禁用顺丰速运Cookie}}}mcs-mimp-web.sf-express.com,{{{禁用万达智慧商业Cookie}}}www.wandawic.com,{{{禁用喜茶Cookie}}}vip.heytea.com,{{{禁用有赞小程序Cookie}}}h5.youzan.com,{{{禁用吾爱破解Cookie}}}www.52pojie.cn,{{{禁用WPS_Cookie}}}*.wps.cn
