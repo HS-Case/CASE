@@ -44,4 +44,4 @@
 {{{禁用WPS_Cookie}}} WPS_Cookie = type=http-request, pattern=^https:\/\/(vip|account)(userinfo|\.wps\.cn\/p\/auth\/check)$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/wps.js, timeout=60
 
 [MITM]
-hostname = %APPEND% app.bilibili.com, m.bilibili.com, developer.aliyun.com, auth.alipan.com, auth.aliyundrive.com, game.dominos.com.cn, cmallapi.haday.cn, xh-vip-api.a-touchin.com, gw2c-hw-open.longfor.com, mxsa.mxbc.net, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, tm-web.pin-dao.cn, pos.meituan.com, userapi.qiekj.com, mcs-mimp-web.sf-express.com, www.wandawic.com, vip.heytea.com, h5.youzan.com, www.52pojie.cn, *.wps.
+hostname = %APPEND% api.example.com,{{{禁用WPS_Cookie}}}client.app.coc.10086.cn
