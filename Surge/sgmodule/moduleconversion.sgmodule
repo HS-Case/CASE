@@ -1,11 +1,9 @@
 #!name=解析转换
 #!desc=快速添加通用链接为Surge模块,依赖Script.hub
-#!arguments=SURGE_SUFFIX:Surge,STASH_SUFFIX:Stash,LOON_SUFFIX:Loon
-#!arguments-desc=[参数设置]\nSURGE_SUFFIX: 自定义Surge转换链接的后戳参数\n[模块说明]\n• 模块依赖于https://script.hub环境运行;\n• 模块限Surge使用\n• Surge用户只需修改SURGE_SUFFIX参数即可安装
 
 [URL Rewrite]
 # 转为Surge
-^https:\/\/(.*git|kelee.*)\/(.*\.)(js|conf|snippet|plugin|list|yaml).*({{{SURGE_SUFFIX}}})$ http://script.hub/file/_start_/https://$1/$2$3/_end_/$2.sgmodule?type=surge-module&target=surge-module&del=true
+^https:\/\/(.*git|kelee.*)\/(.*\.)(js|conf|snippet|plugin|list|yaml).*(ss)$ http://script.hub/file/_start_/https://$1/$2$3/_end_/$2.sgmodule?type=surge-module&target=surge-module&del=true
 
 [MITM]
 hostname = %APPEND% github.com, raw.githubusercontent.com, gist.github.com, gist.githubusercontent.com, gitlab.com, gitee.com, gitcode.net, kelee.one
